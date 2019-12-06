@@ -29,9 +29,15 @@ Add the flag `--date_in_name` to add the recording date at the beginning of the 
 #### Date Format for File Name
 If you use the flag `--date_in_name` you can modify the date format with `--date_in_name_format`.
 
-Default: `%Y-%m-%d-%H-%M-%S_` ➔ 2019-12-06 22:31:11
+Default: `%Y-%m-%d-%H-%M-%S_` ➔ 2019-12-06-22-31-11_
 
 #### Prevent to Open Finder
 Use the flag `--no_finder` to avoid opening a finder window to view exported memos.
 
 ### Example
+`python main.py -e ~/Music/memos -a --date_in_name --date_in_name_format "%Y-%m-%d "`
+
+
+## Disclaimer:
+No liability for damage to the memo database, library folder, or anywhere else in the file system.
+Create a backup (in particular of `~/Library`) before using this tool.

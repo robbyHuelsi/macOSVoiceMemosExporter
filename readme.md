@@ -1,8 +1,8 @@
-# macOS Voice Memo Exporter
-Python project to export audio files from macOS Voice Memo App with right filename and date created
+# macOS Voice Memos Exporter
+Python project to export audio files from macOS Voice Memos app with right filename and date created
 ![Screenshot](screenshot.png)
 
-Since Apple has forgotten to implement a serious export function to the Voice Memo app, this project will help you.
+Since Apple has forgotten to implement a serious export function to the Voice Memos app, this project will help you.
 You can export all or selected memos as audio files. The names of the files correspond to the labels of the memos.
 The recording date of the memos can be found in the creation date of the files and can be also added to the file name.
 

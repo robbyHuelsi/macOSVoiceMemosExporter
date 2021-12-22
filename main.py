@@ -148,7 +148,7 @@ def main():
         duration_str = str(timedelta(seconds=row[1]))
         duration_str = duration_str[:duration_str.rfind(".") + 3] if "." in duration_str else duration_str + ".00"
         duration_str = "0" + duration_str if len(duration_str) == 10 else duration_str
-        label = row[2].encode('ascii', 'ignore').decode("ascii").replace("/", "_")
+        label = row[2].encode(encoding = 'UTF-8', errors = 'strict').decode("UTF-8").replace("/", "_")
         path_old = row[3] if row[3] else ""
         if path_old:
             path_new = label + path_old[path_old.rfind("."):]
